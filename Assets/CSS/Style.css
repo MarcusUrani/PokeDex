@@ -49,27 +49,75 @@ table {
 }
 
 .header {
-  text-align: center;
   background-color: #1BEDF7;
-  padding: 1.2rem 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   width: 100%;
 }
 .header__navbar {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-around;
+  padding: 1.2rem 0;
   width: 100%;
 }
 .header__link {
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
   color: #0c0c0c;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
 
 .logo {
   width: 6.25rem;
+}
+
+.main {
+  color: #0c0c0c;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2.5rem;
+  padding: 0 6rem;
+  text-align: center;
+}
+.main__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.main__text {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.8rem;
+  margin: 1.5rem 0;
+  scroll-behavior: smooth;
+}
+.main__text__link {
+  color: #0c0c0c;
+  text-decoration: none;
+}
+.main__text__gif {
+  width: 2.0625rem;
+}
+.main__text__charizard {
+  width: 1.8rem;
+}
+
+.footer {
+  background-color: #ee1515;
+}
+.footer__container {
+  color: #f0f0f0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 1.15rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.footer__link {
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=Style.css.map */

@@ -1,1 +1,6 @@
-@import 'reset', 'header';
+$black: #0c0c0c;
+$blue: #1BEDF7;
+$red: #ee1515;
+$white: #f0f0f0;
+
+@import 'reset', 'header', 'main', 'footer';

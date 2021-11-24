@@ -1,0 +1,20 @@
+.footer {
+    background-color: $red;
+
+    &__container {
+        color: $white;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 1.15rem 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+    }
+}
