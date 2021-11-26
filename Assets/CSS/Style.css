@@ -100,6 +100,46 @@ table {
 .main__text__charizard {
   width: 1.8rem;
 }
+.main__search {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.main__input {
+  border: none;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 0.5rem;
+}
+.main__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  padding: 0 6rem;
+}
+.main__card {
+  border-color: #000;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 6px 10px 2px rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0;
+  padding: 0.7rem;
+}
+.main__card__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.2rem 0;
+  text-align: center;
+}
+.main__card__text {
+  margin: 0.7rem 0;
+}
 
 .footer {
   background-color: #ee1515;
