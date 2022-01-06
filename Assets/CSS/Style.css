@@ -67,6 +67,10 @@ table {
   text-transform: uppercase;
   font-size: 1.2rem;
 }
+.header__link:hover {
+  color: #f0f0f0;
+  transition: all ease 0.5s;
+}
 
 .logo {
   width: 6.25rem;
