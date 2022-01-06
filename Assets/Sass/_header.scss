@@ -28,3 +28,9 @@
 .logo {
     width: 6.25rem;
 }
+
+@media(max-width: 450px) {
+    .header__link {
+        width: 100%;
+    }
+}

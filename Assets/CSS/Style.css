@@ -75,11 +75,15 @@ table {
   width: 6.25rem;
 }
 
+@media (max-width: 450px) {
+  .header__link {
+    width: 100%;
+  }
+}
 .main {
   color: #0c0c0c;
   font-family: "Poppins", sans-serif;
   margin-top: 2.5rem;
-  padding: 0 6rem;
   text-align: center;
 }
 .main__title {
@@ -143,7 +147,6 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 3rem 0;
-  padding: 0 6rem;
 }
 .main__card {
   border-color: #000;
@@ -155,10 +158,6 @@ table {
   margin: 1rem 0;
   padding: 0.7rem;
   text-align: center;
-  width: 25%;
-}
-.main__card__img {
-  width: 200px;
 }
 .main__card__title {
   font-size: 1.2rem;
@@ -173,9 +172,13 @@ table {
   text-transform: uppercase;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
+  .main {
+    padding: 0 0.5rem;
+  }
+
   .main__cards {
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
   }
 
   .main__card {
@@ -186,8 +189,8 @@ table {
   }
 }
 @media (min-width: 750px) {
-  .main__cards {
-    padding: 1rem 3rem;
+  .main {
+    padding: 0 6rem;
   }
 
   .main__card {
