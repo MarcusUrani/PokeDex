@@ -101,16 +101,37 @@ table {
   width: 1.8rem;
 }
 .main__search {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
+  justify-content: center;
   margin: 1.5rem 0;
-  text-align: center;
 }
 .main__input {
   border: none;
   border-radius: 10px;
   border-style: solid;
   border-width: 0.1rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+.main__contain {
+  padding: 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+.main__button {
+  background-color: #ee1515;
+  border: none;
+  border-radius: 0.9rem;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  box-shadow: 2px 2px 15px 2px #5B5B5B;
+  color: #f0f0f0;
+  cursor: pointer;
   padding: 0.5rem;
 }
 .main__cards {
@@ -130,15 +151,23 @@ table {
   font-family: "Poppins", sans-serif;
   margin: 1rem 0;
   padding: 0.7rem;
+  text-align: center;
+  width: 25%;
+}
+.main__card__img {
+  width: 200px;
 }
 .main__card__title {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 1.2rem 0;
   text-align: center;
+  text-transform: capitalize;
 }
 .main__card__text {
   margin: 0.7rem 0;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -158,6 +187,10 @@ table {
 .footer__link {
   color: #f0f0f0;
   text-decoration: none;
+}
+.footer__link:hover {
+  color: #0c0c0c;
+  transition: all ease 0.5s;
 }
 
 /*# sourceMappingURL=Style.css.map */

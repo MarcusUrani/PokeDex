@@ -16,5 +16,10 @@
     &__link {
         color: $white;
         text-decoration: none;
+
+        &:hover {
+            color: $black;
+            transition: all ease .5s;
+        }
     }
 }

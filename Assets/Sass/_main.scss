@@ -32,10 +32,13 @@
     }
 
     &__search {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
         font-family: 'Poppins', sans-serif;
         font-size: 1.4rem;
+        justify-content: center;
         margin: 1.5rem 0;
-        text-align: center;
     }
 
     &__input {
@@ -43,7 +46,27 @@
         border-radius: 10px;
         border-style: solid;
         border-width: 0.1rem;
+        margin-left: .5rem;
         padding: 0.5rem;
+    }
+
+    &__contain {
+        padding: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__button {
+        background-color: $red;
+        border: none;
+        border-radius: 0.9rem;
+        border-style: solid;
+        border-color: $white;
+        border-width: 1px;
+        box-shadow: 2px 2px 15px 2px #5B5B5B;
+        color: $white;
+        cursor: pointer;
+        padding: .5rem;
     }
 
     &__cards {
@@ -64,16 +87,26 @@
         font-family: 'Poppins', sans-serif;
         margin: 1rem 0;
         padding: .7rem;
+        text-align: center;
+        width: 25%;
+
+        &__img {
+
+            width: 200px;
+        }
 
         &__title {
             font-size: 1.2rem;
             font-weight: bold;
             margin: 1.2rem 0;
             text-align: center;
+            text-transform: capitalize;
         }
 
         &__text {
             margin: 0.7rem 0;
+            text-align: left;
+            text-transform: uppercase;
         }
     }
 }
