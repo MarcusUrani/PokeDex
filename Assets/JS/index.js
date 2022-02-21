@@ -18,7 +18,7 @@ const getData = () => {
            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
              pokemon.id
            }.png"class="main__card__img"/>
-           <h4 class="main__card__title">${pokemon.id} - ${pokemon.name}</h4>
+           <h4 class="main__card__title" id="pokemon-name">${pokemon.name}</h4>
            <p class="main__card__text">Peso: ${pokemon.weight}</p>
            <p class="main__card__text">Altura: ${pokemon.height}</p>
           <p class="main__card__text">${pokemon.types
