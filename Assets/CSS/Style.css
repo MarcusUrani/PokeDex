@@ -261,4 +261,17 @@ table {
   transition: all ease 0.5s;
 }
 
+@media (max-width: 768px) {
+  .footer__container {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  .footer__container {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
