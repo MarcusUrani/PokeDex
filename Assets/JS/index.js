@@ -11,15 +11,21 @@ const getPokemons = async (number) => {
 
 //Criação do HTML
 const constructHTML = async (pokemonPromisses) => {
-  setTimeout;
   const pokemonList = await pokemonPromisses
     .map(
       (pokemon) =>
         `<div class="main__card">
-             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"class="main__card__img"/>
-             <h4 class="main__card__title" id="pokemon-name">${pokemon.name}</h4>
+             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+               pokemon.id
+             }.png"class="main__card__img"/>
+             <h4 class="main__card__title" id="pokemon-name">${
+               pokemon.name
+             }</h4>
              <p class="main__card__text">Peso: ${pokemon.weight}</p>
              <p class="main__card__text">Altura: ${pokemon.height}</p>
+             <p class="main__card__text">${pokemon.types
+               .map((item) => item.type.name)
+               .join(" | ")}</p>
            </div>`
     )
     .join("");
