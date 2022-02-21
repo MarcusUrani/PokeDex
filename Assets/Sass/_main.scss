@@ -1,150 +1,181 @@
 .main {
-    color: $black;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 2.5rem;
+  color: $black;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2.5rem;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.8rem;
+    margin: 1.5rem 0;
+    scroll-behavior: smooth;
+
+    &__link {
+      color: $black;
+      text-decoration: none;
+    }
+
+    &__gif {
+      width: 2.0625rem;
+    }
+
+    &__charizard {
+      width: 1.8rem;
+    }
+  }
+
+  &__search {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0.1rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  &__contain {
+    padding: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  &__button {
+    background-color: $red;
+    border: none;
+    border-radius: 0.9rem;
+    border-style: solid;
+    border-color: $white;
+    border-width: 1px;
+    box-shadow: 2px 2px 15px 2px #5b5b5b;
+    color: $white;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all ease 0.4s;
+
+    &:hover {
+      background-color: $white;
+      border-color: $red;
+      color: $red;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+  }
+
+  &__card {
+    border-color: #000;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 6px 10px 2px rgba(0, 0, 0, 0.4);
+    font-family: "Poppins", sans-serif;
+    margin: 1rem 0;
+    padding: 0.7rem;
     text-align: center;
 
     &__title {
-        font-size: 2rem;
-        text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 1.2rem 0;
+      text-align: center;
+      text-transform: capitalize;
     }
 
     &__text {
-        font-size: 1.2rem;
-        letter-spacing: 0.05rem;
-        line-height: 1.8rem;
-        margin: 1.5rem 0;
-        scroll-behavior: smooth;
-
-        &__link {
-            color: $black;
-            text-decoration: none;
-        }
-
-        &__gif {
-            width: 2.0625rem;
-        }
-
-        &__charizard {
-            width: 1.8rem;
-        }
+      margin: 0.7rem 0;
+      text-align: left;
+      text-transform: uppercase;
     }
+  }
 
-    &__search {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.4rem;
-        justify-content: center;
-        margin: 1.5rem 0;
-    }
-
-    &__input {
-        border: none;
-        border-radius: 10px;
-        border-style: solid;
-        border-width: 0.1rem;
-        margin-left: .5rem;
-        padding: 0.5rem;
-    }
-
-    &__contain {
-        padding: 1.2rem;
-        text-align: center;
-        width: 100%;
-    }
-
-    &__button {
-        background-color: $red;
-        border: none;
-        border-radius: 0.9rem;
-        border-style: solid;
-        border-color: $white;
-        border-width: 1px;
-        box-shadow: 2px 2px 15px 2px #5B5B5B;
-        color: $white;
-        cursor: pointer;
-        padding: .5rem;
-    }
-
-    &__cards {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 3rem 0;
-    }
-
-    &__card {
-        border-color: #000;
-        border-radius: 15px;
-        border-style: solid;
-        border-width: 1px;
-        box-shadow:  6px 10px 2px rgba(0,0,0,0.40);
-        font-family: 'Poppins', sans-serif;
-        margin: 1rem 0;
-        padding: .7rem;
-        text-align: center;
-
-        &__title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 1.2rem 0;
-            text-align: center;
-            text-transform: capitalize;
-        }
-
-        &__text {
-            margin: 0.7rem 0;
-            text-align: left;
-            text-transform: uppercase;
-        }
-    }
+  &__loading {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
-@media(min-width: 300px) {
-    .main {
-        padding: 0 .5rem;
+@media (min-width: 300px) {
+  .main {
+    padding: 0 0.5rem;
+  }
+
+  .main__cards {
+    padding: 1rem 1rem;
+  }
+
+  .main__card {
+    width: 100%;
+
+    &__img {
+      width: 300px;
     }
+  }
 
-    .main__cards {
-        padding: 1rem 1rem;
-    }
-
-    .main__card {
-        width: 100%;
-
-        &__img {
-            width: 300px;
-        }
-    }      
+  .main__loading {
+    width: 100%;
+  }
 }
 
-@media(min-width: 750px) {
-    .main {
-        padding: 0 6rem;
+@media (min-width: 750px) {
+  .main {
+    padding: 0 6rem;
+  }
+
+  .main__card {
+    width: 40%;
+
+    &__img {
+      width: 300px;
     }
-
-    .main__card {
-        width: 40%;
-
-        &__img {
-            width: 300px;
-        }
-    }      
+  }
 }
 
-@media(min-width: 1050px) {
-    .main__cards {
-        padding: 0rem 6rem;
+@media (min-width: 1050px) {
+  .main__cards {
+    padding: 0rem 6rem;
+  }
+
+  .main__card {
+    width: 25%;
+
+    &__img {
+      width: 200px;
     }
-
-    .main__card {
-        width: 25%;
-
-        &__img {
-            width: 200px;
-        }
-    }      
+  }
 }

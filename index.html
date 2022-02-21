@@ -52,22 +52,25 @@
           /></a>
         </p>
         <p class="main__text">
-          Para usar basta rolar a página até encontrar o Pokémon desejado.<img
+          Para usar basta selecionar rolar a página até o pokémon selecionado ou navegar pelas gerações.<img
             class="main__text__charizard"
             src="https://c.tenor.com/QkKXbs5rBKcAAAAC/charizard-sprite-rage.gif"
           />
         </p>
-        <button class="main__button" onclick="getFirstData()">Todos</button>
-        <button class="main__button" id="gen1" onclick="getGenData(1)">1ª Geração</button>
-        <button class="main__button" id="gen2">2ª Geração</button>
-        <button class="main__button" id="gen3">3ª Geração</button>
-        <button class="main__button" id="gen4">4ª Geração</button>
-        <button class="main__button" id="gen5">5ª Geração</button>
-        <button class="main__button" id="gen6">6ª Geração</button>
-        <button class="main__button" id="gen7">7ª Geração</button>
-        <button class="main__button" id="gen8">8ª Geração</button>
+        <p class="main__text">Selecione a geração:</p>
+        <section class="main__buttons">
+          <button class="main__button" onclick="getGenData(0)">Todos</button>
+          <button class="main__button" id="gen1" onclick="getGenData(1)">1ª Geração</button>
+          <button class="main__button" id="gen2" onclick="getGenData(2)">2ª Geração</button>
+          <button class="main__button" id="gen3" onclick="getGenData(3)">3ª Geração</button>
+          <button class="main__button" id="gen4" onclick="getGenData(4)">4ª Geração</button>
+          <button class="main__button" id="gen5" onclick="getGenData(5)">5ª Geração</button>
+          <button class="main__button" id="gen6" onclick="getGenData(6)">6ª Geração</button>
+          <button class="main__button" id="gen7" onclick="getGenData(7)">7ª Geração</button>
+          <button class="main__button" id="gen8" onclick="getGenData(8)">8ª Geração</button>
+        </section>
       </section>
-      <section class="main__cards"></section>
+      <ul class="main__cards"></ul>
     </main>
     <footer class="footer">
       <div class="footer__container">

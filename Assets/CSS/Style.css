@@ -129,6 +129,12 @@ table {
   text-align: center;
   width: 100%;
 }
+.main__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
 .main__button {
   background-color: #ee1515;
   border: none;
@@ -136,10 +142,22 @@ table {
   border-style: solid;
   border-color: #f0f0f0;
   border-width: 1px;
-  box-shadow: 2px 2px 15px 2px #5B5B5B;
+  box-shadow: 2px 2px 15px 2px #5b5b5b;
   color: #f0f0f0;
   cursor: pointer;
   padding: 0.5rem;
+  transition: all ease 0.4s;
+}
+.main__button:hover {
+  background-color: #f0f0f0;
+  border-color: #ee1515;
+  color: #ee1515;
+}
+.main__button:focus {
+  outline: none;
+}
+.main__button:active {
+  transform: translateY(2px);
 }
 .main__cards {
   display: flex;
@@ -171,6 +189,10 @@ table {
   text-align: left;
   text-transform: uppercase;
 }
+.main__loading {
+  width: 80%;
+  margin: 0 auto;
+}
 
 @media (min-width: 300px) {
   .main {
@@ -186,6 +208,10 @@ table {
   }
   .main__card__img {
     width: 300px;
+  }
+
+  .main__loading {
+    width: 100%;
   }
 }
 @media (min-width: 750px) {
@@ -235,4 +261,4 @@ table {
   transition: all ease 0.5s;
 }
 
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=style.css.map */
